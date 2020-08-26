@@ -6,7 +6,12 @@ int main() {
 	printf("Enter number : ");
 	scanf_s("%d", &inpu);
 	printf("Factoring Result : ");
-
+	if (inpu <= 0) {
+		printf("ERROR");  return 0;
+	}
+	else if (inpu == 1) {
+		printf("1"); return 0;
+	}
 	while (inpu != 1) {
 
 		
